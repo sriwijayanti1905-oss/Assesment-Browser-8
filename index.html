@@ -94,6 +94,12 @@
             white-space: nowrap;
         }
 
+        /* Mengubah warna ikon calendar picker bawaan browser webkit */
+           input[type="date"]::-webkit-calendar-picker-indicator {
+           filter: invert(0.8) sepia(100%) saturate(1000%) hue-rotate(350deg);
+           cursor: pointer;
+        }
+
         @keyframes timerPulse {
             0% { opacity: 1; text-shadow: 0 0 10px #ef4444; }
             50% { opacity: 0.4; text-shadow: none; }
